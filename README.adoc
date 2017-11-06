@@ -10,7 +10,7 @@ The projects below are listed in reverse chronological order
 
 
 
-== Internal company analytics website
+== &#x1f30e; Internal company analytics website
 
 [IMPORTANT]
 ====
@@ -25,7 +25,7 @@ The relevant "de-classified" code is at
 https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Analytics Code].
 
 
-== Albatross Online Store
+== &#x1f30e; Albatross Online Store
 
 image::https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/albatross/albatross-screenshot.png[link=http://ec2-18-221-173-220.us-east-2.compute.amazonaws.com/~bolokhov/albatross]
 
@@ -33,13 +33,14 @@ The code is hosted at https://github.com/pasha-bolokhov-cs/comp199[Albatross Pro
 The running LAMP version is available on this
 http://ec2-18-221-173-220.us-east-2.compute.amazonaws.com/~bolokhov/albatross[Amazon EC2] instance.
 
-== Sushi Palace
-image::https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/sushi-palace/sushi-palace-screenshot.png[link=http://ec2-18-221-173-220.us-east-2.compute.amazonaws.com/~bolokhov/sushi-palace]
+== &#x1f30e; Sushi Palace
+image::https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/sushi-palace/sushi-palace-screenshot.png[link=http://165.231.196.104.bc.googleusercontent.com/~bolokhov/sushi-palace]
 
-This project is hosted at https://github.com/pasha-bolokhov-cs/comp140/tree/master/production[Sushi Palace] page
+This project is hosted at https://github.com/pasha-bolokhov-cs/comp140/tree/master/production[Sushi Palace] page.
 
-The running LAMP page is available on this
-http://ec2-18-221-173-220.us-east-2.compute.amazonaws.com/~bolokhov/sushi-palace[Amazon EC2] instance.
+An app running on a LEMP(nginx) stack is available on this
+http://165.231.196.104.bc.googleusercontent.com/~bolokhov/sushi-palace[Google Compute] instance.
 
 [NOTE]
 This is a rather early and simple project
+
