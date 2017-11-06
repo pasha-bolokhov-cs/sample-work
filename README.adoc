@@ -34,3 +34,9 @@ The running LAMP version is available on this
 http://ec2-18-221-173-220.us-east-2.compute.amazonaws.com/~bolokhov/albatross[Amazon EC2] instance.
 
 == Sushi Palace
+image::https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/sushi-palace/sushi-palace-screenshot.png[link=http://ec2-18-221-173-220.us-east-2.compute.amazonaws.com/~bolokhov/sushi-palace]
+
+This project is hosted at https://github.com/pasha-bolokhov-cs/comp140/tree/master/production[Sushi Palace] page
+
+The running LAMP page is available on this
+http://ec2-18-221-173-220.us-east-2.compute.amazonaws.com/~bolokhov/sushi-palace[Amazon EC2] instance.
