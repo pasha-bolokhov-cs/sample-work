@@ -1,0 +1,14 @@
+=Samples of Web Developing work
+
+==Internal company analytics website
+
+[NOTE] that the relevant company business-related information (terminology, identifiers, comments) is blacked-out in the code
+and on the snapshot picture
+
+The website is shown on picture 
+https://github.com/pasha-bolokhov-cs/sample-work/blob/master/analytics/analytics-screenshot.png[Analytics Screenshot].
+
+The relevant "de-classified" code is at
+https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics
+
+
