@@ -15,7 +15,6 @@ The projects below are listed in reverse chronological order
 [IMPORTANT]
 ====
 Company's business-related information (terminology, identifiers, comments) is blacked-out in the code
-and on the snapshot picture
 ====
 
 The website is shown on picture 
