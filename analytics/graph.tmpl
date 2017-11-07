@@ -1,0 +1,240 @@
+<!--
+  "Graph" Web Page
+  Author: Pasha Bolokhov <pasha.bolokhov@gmail.com>
+
+  TODO:
+	* Google Material (for graphs)
+	* "md-button" produces warnings about older IE
+-->
+
+
+
+<!-- ********** -->
+<!-- ** Head ** -->
+<!-- ********** -->
+<head>
+  <title>Graphs</title>
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css">
+
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+
+  <!-- Google Material Design Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Google API -->
+  <!-- Load the AJAX API -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <!-- 'GraphApp' module -->
+  <script type="text/javascript">
+    [% INCLUDE graph.js %]
+  </script>
+
+  <!--
+    Correct for 'minimum size' bug in Chrome, Opera and Safari
+    http://lists.w3.org/Archives/Public/www-style/2014Dec/0249.html
+  -->
+  <style>
+    * {
+    	flex-shrink: 0 !important;
+    }
+  </style>
+</head>
+
+
+
+<!-- ********** -->
+<!-- ** Body ** -->
+<!-- ********** -->
+<body OnLoad="[% onload %]" layout="column" ng-controller="MainController" ng-cloak>
+
+    <!-------------------->
+    <!-- Navigation Bar -->
+    <!-------------------->
+    <md-toolbar class="md-menu-toolbar">
+      <md-whiteframe class="md-whiteframe-4dp">
+        <md-menu-bar layout="row" layout-align="space-between center" layout-padding>
+          [% FOREACH hdr IN headers %]
+            [% FOREACH aact IN allowed_actions %]
+              [% IF (aact.action == 'any' || aact.action == hdr.action) %]
+                <md-button ng-href="?action=[% hdr.action %]" style="text-transform: none">[% hdr.header %]</md-button>
+                [% LAST %]
+              [% END %]
+            [% END %]
+          [% END %]
+          <span flex></span>    <!-- shuffle 'Logout' to the right -->
+          <md-button ng-href="?action=logout" target="_blank" style="text-transform: none">Logout</md-button>
+	</md-menu-bar>
+      </md-whiteframe>
+    </md-toolbar>
+    <br>
+
+    <!---------------------------->
+    <!-- Errors and Diagnostics -->
+    <!---------------------------->
+    <!--** error message **-->
+    <div style="position: fixed;
+                top: 50%; left: 0; right: 0;
+                transform: translate(0, -50%);
+                /* opacity: 0.6; */
+                z-index: 100">
+      <md-toolbar class="md-warn" ng-show="$root.error" ng-click="$root.error = false" ng-cloak>
+        <div class="md-toolbar-tools" layout="row" layout-align="center center">
+          {{ $root.error }}
+        </div>
+      </md-toolbar>
+    </div>
+
+    <!--** ... loading ... **-->
+    <div layout="column" layout-align="center center"
+         ng-show="$root.waiting" ng-cloak
+         style="position: fixed;
+                top: 50%; left: 0; right: 0;
+                transform: translate(0, -50%);
+                z-index: 200">
+      <md-progress-circular md-mode="indeterminate" md-diameter="160"></md-progress-circular>
+    </div>
+
+
+    <!------------------------->
+    <!-- Recent View Toolbar -->
+    <!------------------------->
+    <md-toolbar class="md-hue-4" layout="row" layout-sm="column">
+      <md-button md-no-ink="true" class="" ng-class="recentDays == 7 ? 'md-raised' : ''"
+                 flex-gt-sm="25" ng-click="recentDays = 7; recentView()">Week</md-button>
+      <md-button md-no-ink="true" class="" ng-class="recentDays == 30 ? 'md-raised' : ''"
+                 flex-gt-sm="25" ng-click="recentDays = 30; recentView()">Month</md-button>
+      <md-button md-no-ink="true" class="" ng-class="recentDays == 365 ? 'md-raised' : ''"
+                 flex-gt-sm="25" ng-click="recentDays = 365; recentView()">Year</md-button>
+      <md-button md-no-ink="true" class="" ng-class="recentDays == 0 ? 'md-raised' : ''"
+                 flex-gt-sm="25" ng-click="recentDays = 0; recentView()">All</md-button>
+    </md-toolbar>
+    <br>
+    <br>
+
+
+    <!--------------------->
+    <!-- Downloads Chart -->
+    <!--------------------->
+    <div ng-controller="DownloadsController" ng-cloak
+         layout="column" layout-align="space-between stretch">
+      <!--** Header **-->
+      <div layout="column" layout-align="center center">
+        <h1 class="md-display-1">Integrated Request Data</h1>
+      </div>
+
+      <!--** Dashboard **-->
+      <div id="downloads_dashboard_div" layout="column" layout-align="space-around stretch">
+        <!-- graph -->
+        <div id="downloads_graph_div">
+        </div>
+      
+        <!-- slider -->
+        <div layout="row" layout-align="center center">
+          <div flex="60" id="downloads_slide_div"></div>
+        </div>
+      </div>
+
+
+      <!--** Downloads Input Form **-->
+      <br>
+      <br>
+      <div layout="row" layout-align="center start" layout-margin>
+        <md-input-container flex-xs="50" flex-sm="50" flex-gt-sm="10">
+          <label>Category</label>
+	  <md-select name="product" ng-model="product" md-on-close="refresh()" required>
+	    <md-option value="all">All Requests</md-option>
+	    <md-option value="xxx">XXX</md-option>
+	    <md-option value="yyy">YYY</md-option>
+	    <md-option value="zzz">ZZZ</md-option>
+	  </md-select>
+        </md-input-container>
+        <md-input-container flex-xs="50" flex-sm="50" flex-gt-sm="10">
+          <label>Average over</label>
+	  <form ng-submit="refresh()">
+            <input type="number" ng-model="period" required>
+            <ng-message style="color: maroon" role="alert"
+                        ng-show="period < 0 || period > $root.max_reasonable_averaging_period">
+              Aw, seriously... {{ period }}?
+            </ng-message>
+	  </form>
+        </md-input-container>
+      </div>
+    </div>
+
+
+    <!----------------->
+    <!-- Extra space -->
+    <!----------------->
+    <br>
+
+
+    <!------------------>
+    <!-- %%%%% Chart -->
+    <!------------------>
+    <div ng-controller="%%%%%Controller" ng-cloak
+         layout="column" layout-align="space-between stretch">
+      <!--** Header **-->
+      <div layout="column" layout-align="center center">
+        <h1 class="md-display-1">Daily Statistics</h1>
+      </div>
+
+      <!--** Dashboard **-->
+      <div id="%%%%%_dashboard_div" layout="column" layout-align="space-around stretch">
+        <!-- graph -->
+        <div id="%%%%%_graph_div">
+        </div>
+  
+        <!-- slider -->
+        <div layout="row" layout-align="center center">
+          <div flex="60" id="%%%%%_slide_div"></div>
+        </div>
+      </div>
+  
+      <!--** %%%%% Input Form **-->
+      <br>
+      <br>
+      <div layout="row" layout-align="center start" layout-margin>
+        <md-input-container flex-xs="50" flex-sm="50" flex-gt-sm="10">
+          <label>Requested by</label>
+	  <md-select name="qtype" ng-model="qtype" md-on-close="refresh()" required>
+	    <md-option value="all">All</md-option>
+	    <md-option value="***">********</md-option>
+	  </md-select>
+        </md-input-container>
+        <md-input-container flex-xs="50" flex-sm="50" flex-gt-sm="10">
+          <label>Average over</label>
+	  <form ng-submit="refresh()">
+            <input type="number" ng-model="period" required>
+            <ng-message style="color: maroon" role="alert"
+                        ng-show="period < 0 || period > $root.max_reasonable_averaging_period">
+              Aw, seriously... {{ period }}?
+            </ng-message>
+	  </form>
+        </md-input-container>
+      </div>
+    </div>
+
+
+    <!----------------->
+    <!-- Extra space -->
+    <!----------------->
+    <br>
+
+
+    <!---------------------------------------------------------->
+    <!-------- THIS FILE IS ABOUT TWICE IS LONG AS SHOWN ------->
+    <!---- THE REST OF FILE CONTAINS COMMERCIAL INFORMATION ---->
+    <!-- THE MARKUP OF THE REST OF FILE IS ANALOGOUS TO ABOVE -->
+    <!---------------------------------------------------------->
+
+</body>
