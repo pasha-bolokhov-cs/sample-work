@@ -10,7 +10,7 @@ The projects below are listed in reverse chronological order
 
 
 
-== &#x1f30e; Internal proprietery analytics website
+== &#x1f30e; Internal proprietary analytics website
 
 [IMPORTANT]
 ====
