@@ -29,7 +29,7 @@ https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Analytics
 image::https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/albatross/albatross-screenshot.png[link=https://albatross-travel-app.herokuapp.com]
 
 The code is hosted at https://gitlab.com/pasha-bolokhov/albatross-travel[Albatross Project] webpage.
-The running LEMP version is available in this
+The running LEMP version is available on this
 https://albatross-travel-app.herokuapp.com[Heroku] container.
 
 == &#x1f30e; Sushi Palace
