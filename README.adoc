@@ -10,18 +10,18 @@ The projects below are listed in reverse chronological order
 
 
 
-== &#x1f30e; Internal company analytics website
+== &#x1f30e; Internal proprietery analytics website
 
 [IMPORTANT]
 ====
-Company's business-related information (terminology, identifiers, comments) is blacked-out in the code
+A web-based company's business-related information (terminology, identifiers, comments) is blacked-out in the code
 ====
 
 The website is shown on picture 
-https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/analytics/analytics-screenshot.png[Analytics Screenshot].
+https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/analytics/analytics-screenshot.png[Request Analytics Screenshot].
 
 The relevant "de-classified" code is at
-https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Analytics Code].
+https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Request Analytics Code].
 
 
 == &#x1f30e; Albatross Online Store
