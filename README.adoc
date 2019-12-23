@@ -37,6 +37,9 @@ image::https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/su
 
 This project is hosted at https://gitlab.com/pasha-bolokhov/sushi-palace[Sushi Palace] page.
 
+An instance running on LEMP stack is available on this
+https://sushi-palace.herokuapp.com[Heroku] deployment
+
 An app running on a LEMP(nginx) stack is available on this
 http://165.231.196.104.bc.googleusercontent.com/~bolokhov/sushi-palace[Google Compute] instance.
 
