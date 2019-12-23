@@ -35,7 +35,7 @@ https://albatross-travel-app.herokuapp.com[Heroku] instance.
 == &#x1f30e; Sushi Palace
 image::https://raw.githubusercontent.com/pasha-bolokhov-cs/sample-work/master/sushi-palace/sushi-palace-screenshot.png[link=http://165.231.196.104.bc.googleusercontent.com/~bolokhov/sushi-palace]
 
-This project is hosted at https://github.com/pasha-bolokhov-cs/comp140/tree/master/production[Sushi Palace] page.
+This project is hosted at https://gitlab.com/pasha-bolokhov/sushi-palace[Sushi Palace] page.
 
 An app running on a LEMP(nginx) stack is available on this
 http://165.231.196.104.bc.googleusercontent.com/~bolokhov/sushi-palace[Google Compute] instance.
