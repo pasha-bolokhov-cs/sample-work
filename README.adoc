@@ -11,6 +11,7 @@ The projects below are listed in reverse chronological order
 
 {empty} +
 {empty} +
+
 == &#x1f30e; Slope-It Google Sheets Add-on
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/slope-it/slope-it-screenshot.png[link=https://pasha-bolokhov.gitlab.io/slope-it-home]
@@ -22,6 +23,7 @@ Install it via its https://gsuite.google.com/marketplace/app/slopeit/10886130430
 
 {empty} +
 {empty} +
+
 == &#x1f30e; Internal proprietary analytics website
 
 [IMPORTANT]
@@ -38,6 +40,7 @@ https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Request A
 
 {empty} +
 {empty} +
+
 == &#x1f30e; Albatross Online Store
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albatross/albatross-screenshot.png[link=https://albatross-travel-app.herokuapp.com]
@@ -49,6 +52,7 @@ https://albatross-travel-app.herokuapp.com[Heroku] instance.
 
 {empty} +
 {empty} +
+
 == &#x1f30e; Sushi Palace
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/sushi-palace/sushi-palace-screenshot.png[link=https://sushi-palace.herokuapp.com]
 
