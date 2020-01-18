@@ -15,7 +15,7 @@ image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/slope
 
 An add-on for statistical calculations in Google Sheets
 
-Install it via the https://gsuite.google.com/marketplace/app/slopeit/1088613043056[G Suite Marketplace listing]
+Install it via its https://gsuite.google.com/marketplace/app/slopeit/1088613043056[G Suite Marketplace listing]
 
 
 == &#x1f30e; Internal proprietary analytics website
