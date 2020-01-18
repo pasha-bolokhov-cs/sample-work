@@ -9,6 +9,7 @@ The projects below are listed in reverse chronological order
 ====
 
 
+[%hardbreaks]
 == &#x1f30e; Slope-It Google Sheets Add-on
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/slope-it/slope-it-screenshot.png[link=https://pasha-bolokhov.gitlab.io/slope-it-home]
@@ -18,6 +19,7 @@ An add-on for statistical calculations in Google Sheets
 Install it via its https://gsuite.google.com/marketplace/app/slopeit/1088613043056[G Suite Marketplace listing]
 
 
+[%hardbreaks]
 == &#x1f30e; Internal proprietary analytics website
 
 [IMPORTANT]
@@ -32,6 +34,7 @@ The relevant "de-classified" code is at
 https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Request Analytics Code].
 
 
+[%hardbreaks]
 == &#x1f30e; Albatross Online Store
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albatross/albatross-screenshot.png[link=https://albatross-travel-app.herokuapp.com]
@@ -40,6 +43,8 @@ The code is hosted at https://gitlab.com/pasha-bolokhov/albatross-travel[Albatro
 The running LEMP version is available on this
 https://albatross-travel-app.herokuapp.com[Heroku] instance.
 
+
+[%hardbreaks]
 == &#x1f30e; Sushi Palace
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/sushi-palace/sushi-palace-screenshot.png[link=https://sushi-palace.herokuapp.com]
 
@@ -53,4 +58,3 @@ http://165.231.196.104.bc.googleusercontent.com/~bolokhov/sushi-palace[Google Co
 
 [NOTE]
 This is a rather early and simple project
-
