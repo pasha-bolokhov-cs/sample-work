@@ -50,7 +50,8 @@ image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albat
 The code is hosted at https://gitlab.com/pasha-bolokhov/albatross-travel[Albatross Project] webpage.
 The running LEMP version is available on this
 https://albatross-travel-app.herokuapp.com[Heroku] instance.
-
+[NOTE]
+This is originally a class project featuring multiple frameworks and services — AngularJS, Bootstrap, JWT, MySQL, PayPal (sandbox) _etc_
 
 {empty} +
 {empty} +
