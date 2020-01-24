@@ -31,7 +31,9 @@ Install it via its https://gsuite.google.com/marketplace/app/slopeit/10886130430
 A web-based company's business-related information (terminology, identifiers, comments) is blacked-out in the code
 ====
 
-The website is shown on picture 
+image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/analytics/analytics-banner.png[link=https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/analytics/analytics-screenshot.png]
+
+The website is shown on picture
 https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/analytics/analytics-screenshot.png[Request Analytics Screenshot].
 
 The relevant "de-classified" code is at
