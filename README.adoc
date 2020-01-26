@@ -14,7 +14,7 @@ The projects below are listed in reverse chronological order
 
 == &#x1f30e; Slope-It Google Sheets Add-on
 
-image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/slope-it/slope-it-screenshot.png[link=https://pasha-bolokhov.gitlab.io/slope-it-home]
+image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/slope-it/slope-it-screenshot.png[link=https://slope-it-tool.web.app]
 
 An add-on for statistical calculations in Google Sheets
 
