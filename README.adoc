@@ -52,20 +52,3 @@ The running LEMP version is available on this
 https://albatross-travel-app.herokuapp.com[Heroku] instance.
 [NOTE]
 This is originally a class project featuring multiple frameworks and services — AngularJS, Bootstrap, JWT, MySQL, PayPal (sandbox) _etc_
-
-{empty} +
-{empty} +
-
-== &#x1f30e; Sushi Palace
-image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/sushi-palace/sushi-palace-screenshot.png[link=https://sushi-palace.herokuapp.com]
-
-This project is hosted at https://gitlab.com/pasha-bolokhov/sushi-palace[Sushi Palace] page.
-
-An instance running on LEMP stack is available on this
-https://sushi-palace.herokuapp.com[Heroku] deployment
-
-An app running on a LEMP(nginx) stack is available on this
-http://165.231.196.104.bc.googleusercontent.com/~bolokhov/sushi-palace[Google Compute] instance.
-
-[NOTE]
-This is a rather early and simple project
