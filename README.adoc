@@ -43,7 +43,7 @@ https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Request A
 {empty} +
 {empty} +
 
-== &#x1f30e; Albatross Online Store
+== &#x1f30e; Albatross Online Store — Feature Project
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albatross/albatross-screenshot.png[link=https://albatross-travel-app.herokuapp.com]
 
@@ -51,4 +51,8 @@ The code is hosted at https://gitlab.com/pasha-bolokhov/albatross-travel[Albatro
 The running LEMP version is available on this
 https://albatross-travel-app.herokuapp.com[Heroku] instance.
 [NOTE]
-This is originally a class project featuring multiple frameworks and services — AngularJS, Bootstrap, JWT, MySQL, PayPal (sandbox) _etc_
+This is originally a _class_ project featuring multiple frameworks and services — AngularJS, Bootstrap, JWT, MySQL, PayPal (sandbox) _etc_
+
+Feel free to browse this project, use a mock email address to sign up and log in. Please note that mobile UX was not a requirement for this project at the time (2015)
+
+The project is being migrated to the modern Angular. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed https://albatross-travel-agency.web.app[here]
