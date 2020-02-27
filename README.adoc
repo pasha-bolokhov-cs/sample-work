@@ -24,7 +24,7 @@ This is originally a _class_ project featuring multiple frameworks and services 
 
 Feel free to browse this project, use a mock email address to sign up and log in. Please note that mobile UX was not a requirement for this project at the time (2015)
 
-The project is being migrated to the modern Angular. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed https://albatross-travel-agency.web.app[here]
+The project is being migrated to the modern Angular. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
 
 
 {empty} +
