@@ -64,7 +64,7 @@ with significant improvements pending to its UI, themes, loading experiences and
 
 The project is being migrated to the modern *Angular*. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
 
-I am providing the reference to the modernized version of the App, as an example of
+I am providing the reference to the modernized version of the App, as a demonstration of
 
 * the ability to follow the modern technology
 * the ability to quickly learn new frameworks and tools
