@@ -82,11 +82,11 @@ The new Albatross app does not have Back End in its traditional sense,
 nor does it have a traditional database.
 Instead, it involves
 
-* Firebase Auth for user authentication (including provider-based authentication with Google, Facebook, Microsoft _etc_)
+* Firebase Auth for user authentication (including provider-based authentication with Google, Facebook, Microsoft _etc_).
   Authentication and the related security issues are no longer a problem for the app
 * Firebase Hosting for serving the app. Deployment is done via CI/CD pipelines
 * Firestore as an ultra-modern, real-time and extremely scalable NoSQL database.
-  While in general NoSQL has been the trend of the last few years, it typically suffers the "denormalization" problem, neeeded in order to provide high-availability data services efficiently.
+  While in general NoSQL has been the trend of the last few years, it typically suffers the "denormalization" problem, needed to address in order to provide high-availability data services efficiently.
   However, with Firestore _shallow queries_, denormalization is not necessary
 * Firestore has rôle-based *access rules*, which provides a simple and yet rock-solid approach
 to authorization. Rules are effectively separated from the logic of the rest of the "back-end",
