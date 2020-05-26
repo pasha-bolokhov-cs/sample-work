@@ -73,16 +73,16 @@ Needless to say that for practical purposes, Angular is an entirely "different" 
 To begin with, it uses *Typescript* as the main language, and has a very large documentation base.
 With it come many features which were not available just a few years ago — Server Side Rendering, Progressive Web Apps, Lazy Loading and many more — with ease.
 Besides Promises (now native), it uses *Observables* as the main approach to reactive programming.
-Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and seamlessly switching between these components (while a "navigation bar" is just the simplest example of this, the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
+Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and of seamlessly switching between these components (while a "navigation bar" is just the simplest example of this, the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
 
-*Firebase* ecosystem provides an easy route to the modern and fast _serverless_ technology.
-This technology provides a highly-scalable approach,
+*Firebase* ecosystem provides an easy route to the modern and fast *serverless* technology.
+This technology gives a highly-scalable approach,
 where the common tasks are performed by the associated Firebase services.
 The new Albatross app does not have Back End in its traditional sense,
 nor does it have a traditional database.
 Instead, it involves
 
-* Firebase Auth for user authentication (this includes provider-based authentication with Google, Facebook, Microsoft _etc_)
+* Firebase Auth for user authentication (including provider-based authentication with Google, Facebook, Microsoft _etc_)
   Authentication and the related security issues are no longer a problem for the app
 * Firebase Hosting for serving the app. Deployment is done via CI/CD pipelines
 * Firestore as an ultra-modern, real-time and extremely scalable NoSQL database.
@@ -95,7 +95,7 @@ minimizing chances of an error
 Cloud functions are NodeJS-based services, which are triggered by specific conditions or events,
 run to keep the database properly organized, and also serve as API access points
 
-Feel free to log onto the hosted version of the new app (links are available above), scout, create an account and assess its features. Many of the features are not visible "by touch", and can only be seen in the code. Again, please note that the app is still under development
+Feel free to log onto the hosted version of the new app (links are available above), scout, create an account (or log in with a provider-based account) and assess its features. Many of the features are not visible "by touch", and can only be seen in the code. Again, please note that the app is still under development
 
 
 {empty} +
