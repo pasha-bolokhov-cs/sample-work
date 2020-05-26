@@ -41,6 +41,7 @@ At the time of creation, it used the most popular frameworks (AngularJS, Bootstr
 The code available to browse, emphasizes the ability to learn new features, significantly exceeding the College's program.
 At the time of writing the code, the courses had covered basic HTML/CSS, basic Javascript, and basic PHP, and MySQL.
 Single Page Apps, REST API and responsive design were not even close to be taught.
+Neither were Git, GitHub and the related aspects of code versioning.
 My rôle was — to discover and educate myself on the leading-edge frameworks, to set up a virtual machine for hosting the app, and to educate and lead the team of developers
 
 The most significant feature of this app (at the time of developing) was AngularJS.
