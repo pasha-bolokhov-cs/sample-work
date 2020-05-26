@@ -1,12 +1,23 @@
 = Samples of Web Development work
 
-[.lead]
-Samples and demos of web development projects
-
 [NOTE]
 ====
 The projects below are listed in chronological order
 ====
+
+[.lead]
+Samples and demos of web development projects
+
+The projects displayed in this portfolio provide a sample of coding experience.
+While this is by no means a complete history of my programming experience,
+these projects emphasize a number of important points.
+While specific features and skills are shown under each project, all of them
+emphasize a number of important characteristics:
+
+* Consistency and strong programming style. This includes writing clean code and supplying comments
+* The importance of finding the most efficient/elegant solutions, at the time of writing the code
+* Modern programming/web features, at the time of writing the code
+* Ability to quickly learn new materials, programming languages, techniques, frameworks and efficiently use them in the code
 
 
 {empty} +
@@ -19,12 +30,71 @@ image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albat
 The code is hosted at https://gitlab.com/pasha-bolokhov/albatross-travel[Albatross Project] webpage.
 The running LEMP version is available on this
 https://albatross-travel-app.herokuapp.com[Heroku] instance.
+
 [NOTE]
 This is originally a _class_ project featuring multiple frameworks and services — AngularJS, Bootstrap, JWT, MySQL, PayPal (sandbox) _etc_
 
+This project demonstrates the skills of both Front End and Back End programming,
+ability to efficiently plan the project and collaborate and lead the programming team.
+At the time of creation, it used the most popular frameworks (AngularJS, Bootstrap) for the Front End.
+The code available to browse, emphasizes the ability to learn new features, significantly exceeding the College's program.
+At the time of writing the code, the courses had covered basic HTML/CSS, basic Javascript, and basic PHP, and MySQL.
+Single Page Apps, REST API and responsive design were not even close to be taught.
+My rôle was — to discover and educate myself on the leading-edge frameworks, to set up a virtual machine for hosting the app, and to educate and lead the team of developers
+
+The most significant feature of this app (at the time of developing) was AngularJS.
+While outdated these days, it was a leading edge and perhaps the most powerful approach to Single Page Apps.
+Using AngularJS involved a number of features by itself. A few examples of them are Promises (not yet part of Javascript), UI Router, state management, form validation (front-end), JWT, and many others
+
+The back-end part of this project was at the same time a simple REST API implementation written in PHP with MySQL as the database.
+The scheme of the database had to be thoroughly prepared, as such was the requirement of the course.
+The database represents the normalized structure of client's data (personal data, purchases) as well as that of the list of products (components, relations between the components _etc_)
+
 Feel free to browse this project, use a mock email address to sign up and log in. Please note that mobile UX was not a requirement for this project at the time (2015)
 
-The project is being migrated to the modern Angular. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
+''''
+
+[NOTE]
+A newer version of this Web App is under development.
+The features that it employs are significantly newer and are at the leading edge of web technology.
+While the project is available to browse, please note that it is in a very raw state,
+with significant improvements pending to its UI, themes, loading experiences and so on
+
+The project is being migrated to the modern *Angular*. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
+
+I am providing the reference to the modernized version of the App, as an example of
+
+* the ability to follow the modern technology
+* the ability to quickly learn new frameworks and tools
+
+Needless to say that for practical purposes, Angular is an entirely "different" framework, with a very thorough and systematic approach to creating a multi-component app.
+To begin with, it uses *Typescript* as the main language, and has a very large documentation base.
+With it come many features which were not available just a few years ago — Server Side Rendering, Progressive Web Apps, Lazy Loading and many more — with ease.
+Besides (now native) Promises, it uses *Observables* as the main approach to reactive programming.
+Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and seamlessly switching between them
+(a "navigation bar" is just the simplest example of this, while the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
+
+*Firebase* ecosystem provides an easy route to the modern and fast _serverless_ technology.
+This technology provides a highly-scalable approach,
+where the common tasks are performed by the associated Firebase services.
+The new Albatross app does not have Back End in its traditional sense,
+nor does it have a traditional database.
+Instead, it involves
+
+* Firebase Auth for user authentication (this includes provider-based authentication with Google, Facebook, Microsoft _etc_)
+  Authentication and the related security issues are no longer a problem for the app
+* Firebase Hosting for serving the app. Deployment is done via CI/CD pipelines
+* Firestore as an ultra-modern, real-time and extremely scalable NoSQL database.
+  While in general NoSQL has been the trend of the last few years, it typically suffers the "denormalization" problem, neeeded in order to provide high-availability data services efficiently.
+  However, with Firestore _shallow queries_, denormalization is not necessary
+* Firestore has rôle-based *access rules*, which provides a simple and yet hardwall approach
+to authorization. Rules are effectively separated from the logic of the rest of the "back-end",
+minimizing chances of an error
+* Firebase Cloud Functions which perform the analogy of the rôle of the traditional "back-end" approach.
+Cloud functions are NodeJS-based services, which are triggered by specific conditions or events,
+run to keep the database properly organized, and also serve as API access points
+
+Feel free to log onto the hosted version of the new app (links are available above), scout, create an account and assess its features. Many of the features are not visible "by touch", and can only be seen in the code. Again, please note that the app is under development
 
 
 {empty} +
