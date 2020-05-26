@@ -92,8 +92,8 @@ Instead, it involves
 to authorization. Rules are effectively separated from the logic of the rest of the "back-end",
 minimizing chances of an error
 * Firebase Cloud Functions which are the analogy of the rôle of the traditional "back-end" approach.
-Cloud functions are NodeJS-based services, which are triggered by specific conditions or events,
-run to keep the database properly organized, and also serve as API access points
+Cloud functions are NodeJS-based services, which are triggered by specific conditions or events.
+They run to keep the database properly organized, and also serve as API access points
 
 Feel free to log onto the hosted version of the new app (links are available above), scout, create an account (or log in with a provider-based account) and assess its features. Many of the features are not visible "by touch", and can only be seen in the code. Again, please note that the app is still under development
 
