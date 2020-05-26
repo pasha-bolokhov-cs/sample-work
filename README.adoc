@@ -91,7 +91,7 @@ Instead, it involves
 * Firestore has rôle-based *access rules*, which provides a simple and yet rock-solid approach
 to authorization. Rules are effectively separated from the logic of the rest of the "back-end",
 minimizing chances of an error
-* Firebase Cloud Functions which perform the analogy of the rôle of the traditional "back-end" approach.
+* Firebase Cloud Functions which are the analogy of the rôle of the traditional "back-end" approach.
 Cloud functions are NodeJS-based services, which are triggered by specific conditions or events,
 run to keep the database properly organized, and also serve as API access points
 
