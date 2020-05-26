@@ -36,6 +36,7 @@ This is originally a _class_ project featuring multiple frameworks and services 
 
 This project demonstrates the skills of both Front End and Back End programming,
 ability to efficiently plan the project and collaborate and lead the programming team.
+This was a course project at the Camosun College's Computer Systems Technology program.
 At the time of creation, it used the most popular frameworks (AngularJS, Bootstrap) for the Front End.
 The code available to browse, emphasizes the ability to learn new features, significantly exceeding the College's program.
 At the time of writing the code, the courses had covered basic HTML/CSS, basic Javascript, and basic PHP, and MySQL.
@@ -70,9 +71,8 @@ I am providing the reference to the modernized version of the App, as an example
 Needless to say that for practical purposes, Angular is an entirely "different" framework, with a very thorough and systematic approach to creating a multi-component app.
 To begin with, it uses *Typescript* as the main language, and has a very large documentation base.
 With it come many features which were not available just a few years ago — Server Side Rendering, Progressive Web Apps, Lazy Loading and many more — with ease.
-Besides (now native) Promises, it uses *Observables* as the main approach to reactive programming.
-Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and seamlessly switching between them
-(a "navigation bar" is just the simplest example of this, while the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
+Besides Promises (now native), it uses *Observables* as the main approach to reactive programming.
+Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and seamlessly switching between these components (while a "navigation bar" is just the simplest example of this, the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
 
 *Firebase* ecosystem provides an easy route to the modern and fast _serverless_ technology.
 This technology provides a highly-scalable approach,
@@ -87,14 +87,14 @@ Instead, it involves
 * Firestore as an ultra-modern, real-time and extremely scalable NoSQL database.
   While in general NoSQL has been the trend of the last few years, it typically suffers the "denormalization" problem, neeeded in order to provide high-availability data services efficiently.
   However, with Firestore _shallow queries_, denormalization is not necessary
-* Firestore has rôle-based *access rules*, which provides a simple and yet hardwall approach
+* Firestore has rôle-based *access rules*, which provides a simple and yet rock-solid approach
 to authorization. Rules are effectively separated from the logic of the rest of the "back-end",
 minimizing chances of an error
 * Firebase Cloud Functions which perform the analogy of the rôle of the traditional "back-end" approach.
 Cloud functions are NodeJS-based services, which are triggered by specific conditions or events,
 run to keep the database properly organized, and also serve as API access points
 
-Feel free to log onto the hosted version of the new app (links are available above), scout, create an account and assess its features. Many of the features are not visible "by touch", and can only be seen in the code. Again, please note that the app is under development
+Feel free to log onto the hosted version of the new app (links are available above), scout, create an account and assess its features. Many of the features are not visible "by touch", and can only be seen in the code. Again, please note that the app is still under development
 
 
 {empty} +
