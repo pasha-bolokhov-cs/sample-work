@@ -69,7 +69,7 @@ I am providing the reference to the modernized version of the App, as a demonstr
 * the ability to follow the modern technology
 * the ability to quickly learn new frameworks and tools
 
-Needless to say that for practical purposes, Angular is an entirely "different" framework, with a very thorough and systematic approach to creating a multi-component app.
+Needless to say that for practical purposes, Angular is an entirely "different" framework (compared with AngularJS), with a very thorough and systematic approach to creating a multi-component app.
 To begin with, it uses *Typescript* as the main language, and has a very large documentation base.
 With it come many features which were not available just a few years ago — Server Side Rendering, Progressive Web Apps, Lazy Loading and many more — with ease.
 Besides Promises (now native), it uses *Observables* as the main approach to reactive programming.
