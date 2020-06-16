@@ -56,6 +56,8 @@ Feel free to browse this project, use a mock email address to sign up and log in
 
 ''''
 
+image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albatross/albatross-angular.png[link=https://albatross-travel-agency.web.app]
+
 [NOTE]
 A newer version of this Web App is under development.
 The features that it employs are significantly newer and are at the leading edge of web technology.
@@ -64,7 +66,7 @@ with significant improvements pending to its UI, themes, loading experiences and
 
 The project is being migrated to the modern *Angular*. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
 
-I am providing the reference to the modernized version of the App, as a demonstration of
+I am providing a reference to the modernized version of the App, as a demonstration of
 
 * the ability to follow the modern technology
 * the ability to quickly learn new frameworks and tools
@@ -73,6 +75,7 @@ Needless to say that for practical purposes, Angular is an entirely "different" 
 To begin with, it uses *Typescript* as the main language, and has a very large documentation base.
 With it come many features which were not available just a few years ago — Server Side Rendering, Progressive Web Apps, Lazy Loading and many more — with ease.
 Besides Promises (now native), it uses *Observables* as the main approach to reactive programming.
+Observables are most effectively demontrated by noticing how changes to a database instantly propagate to the view of the app — no hooks or callbacks are involved.
 Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and of seamlessly switching between these components (while a "navigation bar" is just the simplest example of this, the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
 
 *Firebase* ecosystem provides an easy route to the modern and fast *serverless* technology.
