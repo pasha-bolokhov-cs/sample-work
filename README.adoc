@@ -64,7 +64,10 @@ The features that it employs are significantly newer and are at the leading edge
 While the project is available to browse, please note that it is in a very raw state,
 with significant improvements pending to its UI, themes, loading experiences and so on
 
-The project is being migrated to the modern *Angular*. It will feature the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading. It will use Google Firebase — Auth, Firestore, Storage, Hosting, Functions. A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
+The project is being migrated to the modern *Angular*. It features the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading.
+It uses Google Firebase — Auth, Firestore, Storage, Hosting, Functions.
+It is fully responsive.
+A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
 
 I am providing a reference to the modernized version of the App, as a demonstration of
 
@@ -75,7 +78,7 @@ Needless to say that for practical purposes, Angular is an entirely "different" 
 To begin with, it uses *Typescript* as the main language, and has a very large documentation base.
 With it come many features which were not available just a few years ago — Server Side Rendering, Progressive Web Apps, Lazy Loading and many more — with ease.
 Besides Promises (now native), it uses *Observables* as the main approach to reactive programming.
-Observables are most effectively demontrated by noticing how changes to a database instantly propagate to the view of the app — no hooks or callbacks are involved.
+Observables are most effectively demontrated by seeing how changes to a database instantly propagate to the view of the app — no hooks or callbacks are involved.
 Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and of seamlessly switching between these components (while a "navigation bar" is just the simplest example of this, the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
 
 *Firebase* ecosystem provides an easy route to the modern and fast *serverless* technology.
@@ -98,7 +101,9 @@ minimizing chances of an error
 Cloud functions are NodeJS-based services, which are triggered by specific conditions or events.
 They run to keep the database properly organized, and also serve as API access points
 
-Feel free to log onto the hosted version of the new app (links are available above), scout, create an account (or log in with a provider-based account) and assess its features. Many of the features are not visible "by touch", and can only be seen in the code. Again, please note that the app is still under development
+Feel free to log onto the hosted version of the new app (links are available above), scout, create an account (or log in with a provider-based account) and assess its features. Many of the features are not visible "by touch", and can only be seen in the code.
+Again, please note that the app is still under development.
+In particular, colour themes and palettes and some layouts are temporary
 
 
 {empty} +
@@ -113,11 +118,22 @@ A web-based company's business-related information (terminology, identifiers, co
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/analytics/analytics-banner.png[link=https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics]
 
+
+This was a contract project with Belkasoft, where statistical data analysis related to client activity had to be implemented and displayed on an internal website.
+The website is running Perl(Catalyst) with a MySQL database.
+My duty was the whole implementation of the task, starting from the Front End (for which I decided to use AngularJS with Material Design), to the Back End, where the actual calculations and REST API had to be done.
+I chose Google Charts as a third-party tool for graphical representation of the results
+
 The website is shown on picture
 https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/analytics/analytics-screenshot.png[Request Analytics Screenshot].
 
 The relevant "de-classified" code is at
 https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Request Analytics Code].
+
+I am providing this reference as a demonstration of
+
+* the ability to find the most efficient services (Google Charts in this case)
+* skills in implementing REST API (the Front End has a number of switches which control how the analysis is performed)
 
 
 {empty} +
@@ -130,3 +146,21 @@ image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/slope
 An add-on for statistical calculations in Google Sheets
 
 Install it via its https://gsuite.google.com/marketplace/app/slopeit/1088613043056[G Suite Marketplace] listing
+
+This app assists students in their routine tasks during the laboratory.
+Such tasks are relatively easy to perform, but are tedious, and prone to errors.
+This app does such calculations quickly and effectively, providing a convenient interface
+
+The add-ons for Google Docs are written in App Script (Javascript).
+The main part of the app constitutes the Back End (since it has read/write access to Google Docs).
+The UI elements that are built on top of Google Docs constitute the Front End.
+Front End functions are able to call the Back End functions
+
+Publishing the app is a long process, involving the design of logo and promo images, registration and verification of accounts and so on (without publishing, only the owner is able to use the app, unless the owner "shares" it with others).
+As with other installable apps, clients need to grant the app access to their documents.
+This requires verification of the developer by Google
+
+I am presenting this app as a demonstration of
+
+* the ability to learn proprietary framework
+* the ability to publish an app in a popular marketplace
