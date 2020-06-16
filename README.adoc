@@ -78,7 +78,7 @@ Needless to say that for practical purposes, Angular is an entirely "different" 
 To begin with, it uses *Typescript* as the main language, and has a very large documentation base.
 With it come many features which were not available just a few years ago — Server Side Rendering, Progressive Web Apps, Lazy Loading and many more — with ease.
 Besides Promises (now native), it uses *Observables* as the main approach to reactive programming.
-Observables are most effectively demontrated by seeing how changes to a database instantly propagate to the view of the app — no hooks or callbacks are involved.
+Observables are most effectively demontrated by seeing how changes to a database instantly propagate to the view of the app — no hooks or callbacks involved.
 Angular *Routing* provides a systematic way of splitting both the business logic and the view of the app into components, and of seamlessly switching between these components (while a "navigation bar" is just the simplest example of this, the router allows for a significantly deeper integration between the state of the app and its view — with deep-linking into all "components" of the state of the app)
 
 *Firebase* ecosystem provides an easy route to the modern and fast *serverless* technology.
