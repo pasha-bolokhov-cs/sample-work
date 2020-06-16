@@ -122,7 +122,7 @@ image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/analy
 
 This was a contract project with Belkasoft, where statistical data analysis related to client activity had to be implemented and displayed on an internal website.
 The website is running Perl(Catalyst) with a MySQL database.
-My duty was the whole implementation of the task, starting from the Front End (for which I decided to use AngularJS with Material Design), to the Back End, where the actual calculations and REST API had to be done.
+My duty consisted of the whole implementation of the task, starting from the Front End (for which I decided to use AngularJS with Material Design), to the Back End, where the actual calculations and REST API had to be done.
 I chose Google Charts as a third-party tool for graphical representation of the results
 
 The website is shown on picture
@@ -133,7 +133,7 @@ https://github.com/pasha-bolokhov-cs/sample-work/tree/master/analytics[Request A
 
 I am providing this reference as a demonstration of
 
-* the ability to find the most efficient services (Google Charts in this case)
+* the ability to find and exploit the most efficient services (Google Charts in this case)
 * skills in implementing REST API (the Front End has a number of switches which control how the analysis is performed)
 
 
