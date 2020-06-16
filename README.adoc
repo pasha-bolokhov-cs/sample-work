@@ -144,9 +144,8 @@ I am providing this reference as a demonstration of
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/slope-it/slope-it-screenshot.png[link=https://slope-it-tool.web.app]
 
-An add-on for statistical calculations in Google Sheets
-
-Install it via its https://gsuite.google.com/marketplace/app/slopeit/1088613043056[G Suite Marketplace] listing
+This is an add-on for statistical calculations in Google Sheets.
+It is installable via its https://gsuite.google.com/marketplace/app/slopeit/1088613043056[G Suite Marketplace] listing
 
 This app assists students in their routine tasks during the laboratory.
 Such tasks are relatively easy to perform, but are tedious, and prone to errors.
