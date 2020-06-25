@@ -14,10 +14,13 @@ these projects emphasize a number of important points.
 While specific features and skills are shown under each project, all of them
 emphasize a number of important characteristics:
 
-* Consistency and strong programming style. This includes writing clean code and supplying comments
 * The importance of finding the most efficient/elegant solutions, at the time of writing the code
 * Modern programming/web features, at the time of writing the code
 * Ability to quickly learn new materials, programming languages, techniques, frameworks and efficiently use them in the code
+* Consistency and strong programming style.
+  This includes writing clean code and supplying comments
+* Ability to keep a consistent Git repository or mono–repository.
+  Clean atomic transactional commits, feature branches
 
 
 {empty} +
