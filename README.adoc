@@ -31,15 +31,15 @@ emphasize a number of important characteristics:
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albatross/albatross-packages.png[link=https://albatross-travel-agency.web.app]
 
 [NOTE]
-This is an Angular version of the project shown further below which was originally written in AngularJS.
-This project is still under development.
-The features that it employs are significantly newer and are at the leading edge of web technology.
+This is the Angular version of a class project presented further below, which was originally written with AngularJS.
+The current project is still under development.
+It uses techniques and features that are significantly newer and are at the leading edge of web technology.
 While the project is available to browse, please note that it is in a very raw state,
 with significant improvements pending to its UI, themes, loading experiences and so on
 
-The project is being migrated to the modern *Angular*. It features the approaches that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading.
-It uses Google Firebase — Auth, Firestore, Storage, Hosting, Functions.
-It is fully responsive.
+The project is being migrated to the modern *Angular*. It features the techniques and methods that come with Angular — Material Design, Routing, Lazy Loading, Differential Loading.
+The project is completely serverless, instead making use of Google Firebase microservices such as Firebase Auth, Firestore, Storage, Hosting and Functions.
+This version of the project is designed to be fully responsive.
 A very raw progress can be previewed on the project's https://albatross-travel-agency.web.app[Firebase hosting], where it is deployed from its https://gitlab.com/pasha-bolokhov/albatross[Gitlab repository] using GitLab's CI/CD pipelines
 
 I am providing a reference to the modernized version of the App, as a demonstration of
@@ -72,7 +72,7 @@ Instead, it involves
 
 image::https://raw.githubusercontent.com/pasha-bolokhov/sample-work/master/albatross/albatross-firestore.png[]
 
-* Firestore has rôle-based *access rules*, which provides a simple and yet rock-solid approach
+* Firestore has rôle-based *access rules*, which provide a simple and yet rock-solid approach
 to authorization. Rules are effectively separated from the logic of the rest of the "back-end",
 minimizing chances of an error
 * Firebase Cloud Functions which are the analogy of the rôle of the traditional "back-end" approach.
